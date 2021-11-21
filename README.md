@@ -12,6 +12,10 @@ Docker Image, Docker üzerinde çalışabilen bir container oluşturmak için bi
 
 Docker Container’lar Docker Image'larının çalışan örnekleridir. Bir Image çalıştırmak bir Docker Container oluşturur.
 
+### Docker Daemon
+
+Containerların birbirlerinden izole olarak çalışmasını sağlayıp, kaynak kullanımını ve dağıtımını yapar.
+
 ![Docker](https://user-images.githubusercontent.com/37346097/142767309-0722ae13-685b-46e7-9327-1ce860a61d95.jpg)
 
 
@@ -34,22 +38,27 @@ Docker Image'larını listeler.
 
 Docker üzerindeki bütün Container'ların ID'lerini listeler.
 
+* ```docker info```
 
-
-
-
+Docker Daemon ile ilgili özet bilgiler verir.
 
 * ```docker pull <repository_name>/<image_name>:<image_tag>```
 
-Belirtilen Image'ı local registry'e indirir.
+* *docker pull postgres:latest*
+
+İstenen Image'ı local registry'e indirir.
+
+* ```docker rmi <image_id|image_name>```
+
+İlgili Image'ı siler.
+
+* ```docker inspect <image_id|image_name>```
+
+İlgili Image'la ilgili detaylı bilgiler verir.
 
 * ```docker top <container_id>```
 
 İlgili Container'da top komutunu çalıştırarak çıktısını gösterir.
-
-* ```docker run -it <image_id|image_name> CMD```
-
-Verilen Image'dan terminali attach ederek bir Container oluşturur.
 
 * ```docker pause <container_id>```
 
@@ -75,29 +84,17 @@ Verilen Image'dan terminali attach ederek bir Container oluşturur.
 
 İlgili Container'ı zorlayarak kaldırır. Çalışan bir Container ancak -f ile kaldırılabilir.
 
-* ```docker rmi <image_id|image_name>```
-
-İlgili Image'u siler.
-
 * ```docker rmi -f <image_id|image_name>```
 
 İlgili Image'ı zorlayarak kaldırır. başka isimlerle Tag'lenmiş Image'lar -f ile kaldırılabilir.
-
-* ```docker info```
-
-Docker Daemon ile ilgili özet bilgiler verir.
 
 * ```docker inspect <container_id>```
 
 İlgili Container'la ilgili detaylı bilgiler verir.
 
-* ```docker inspect <image_id|image_name>```
-
-İlgili Image'la ilgili detaylı bilgiler verir.
-
 * ```docker rm $(docker ps -aq)```
 
-Dütün Container'ları kaldırır.
+Bütün Container'ları kaldırır.
 
 * ```docker stop $(docker ps -aq)```
 
@@ -130,3 +127,5 @@ Dangling Volumeları kaldırır.
 * ```docker logs -f <container_id>```
 
 ilgili Container'ın terminalinde o ana kadar oluşan çıktıyı gösterir ve -f follow parametresi ile o andan sonra oluşan logları da göstermeye devam eder.
+
+Daha fazlası için: <https://docs.docker.com/reference/>
