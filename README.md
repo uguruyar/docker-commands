@@ -1,5 +1,20 @@
 ![Docker](https://user-images.githubusercontent.com/37346097/142766107-3221b265-7224-45ad-9dd2-8015c6f2ac48.png)
 
+#### Docker 
+
+Docker, uygulamalarınızı hızla derlemenize, test etmenize ve dağıtmanıza imkan tanıyan bir yazılım platformudur.
+
+#### Image
+
+Docker Image, Docker üzerinde çalışabilen bir container oluşturmak için bir dizi talimat içeren şablondur.
+
+#### Container 
+
+Docker Container’lar Docker Image'larının çalışan örnekleridir. Bir Image çalıştırmak bir Docker Container oluşturur.
+
+![Docker](https://user-images.githubusercontent.com/37346097/142767309-0722ae13-685b-46e7-9327-1ce860a61d95.jpg)
+
+
 # Docker-Commands
 
 * ```docker images```
@@ -13,11 +28,16 @@ Docker Image'larını listeler.
 
 * ```docker ps -a```
 
-Docker Daemon üstündekü bütün containerları listeler.
+Çalışan çalışmayan bütün containerları listeler.
 
 * ```docker ps -aq```
 
-Docker Daemon üzerindeki bütün Container'ların ID'lerini listeler.
+Docker üzerindeki bütün Container'ların ID'lerini listeler.
+
+
+
+
+
 
 * ```docker pull <repository_name>/<image_name>:<image_tag>```
 
