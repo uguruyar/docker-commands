@@ -1,14 +1,14 @@
 ![Docker](https://user-images.githubusercontent.com/37346097/142766107-3221b265-7224-45ad-9dd2-8015c6f2ac48.png)
 
-**Docker** 
+### Docker
 
 Docker, uygulamalarınızı hızla derlemenize, test etmenize ve dağıtmanıza imkan tanıyan bir yazılım platformudur.
 
-#### Image
+### Image
 
 Docker Image, Docker üzerinde çalışabilen bir container oluşturmak için bir dizi talimat içeren şablondur.
 
-#### Container 
+### Container 
 
 Docker Container’lar Docker Image'larının çalışan örnekleridir. Bir Image çalıştırmak bir Docker Container oluşturur.
 
