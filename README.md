@@ -1,23 +1,23 @@
 ![Docker](https://thingsolver.com/wp-content/uploads/docker-cover.png)
 
 # Docker-Commands
-#### Some useful docker commands
 
 * ```docker images```
+* ```docker image ls```
 
-Indirilmis docker imajlarini listeler
+Docker Image'larını listeler.
 
 * ```docker ps```
 
-Çalışmakta olan containerları listeler
+Çalışmakta olan containerları listeler.
 
 * ```docker ps -a```
 
-Docker Daemon üstündekü bütün containerları listeler
+Docker Daemon üstündekü bütün containerları listeler.
 
 * ```docker ps -aq```
 
-Docker Daemon üzerindeki bütün Container'ların ID'lerini listeler
+Docker Daemon üzerindeki bütün Container'ların ID'lerini listeler.
 
 * ```docker pull <repository_name>/<image_name>:<image_tag>```
 
@@ -45,7 +45,7 @@ Verilen Image'dan terminali attach ederek bir Container oluşturur.
 
 * ```docker rm <container_id>```
 
-İlgili Container'ı kaldırır fakat ilişkili Volume'lara dokunmaz
+İlgili Container'ı kaldırır fakat ilişkili Volume'lara dokunmaz.
 
 * ```docker rm -v <container_id>```
 
@@ -97,7 +97,7 @@ Dangling Image'ları listeler.
 
 * ```docker volume ls -f dangling=true```
 
-Dangling Volume'ları listele.r
+Dangling Volume'ları listeler.
 
 * ```docker volume rm $(docker volume ls -f dangling=true -q)```
 
